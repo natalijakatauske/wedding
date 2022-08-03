@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    display: none;
+}
+
 .container {
     /* width: 767px; */
     margin: auto;
@@ -126,6 +130,15 @@ a {
     .pictures {
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+    h1 {
+        display: inline;
+        background-color: grey;
+        margin-left: 30px;
+        font-size: 15px;
+        width: 100px;
+        padding: 10px;
+        color: white;
     }
 }
 
