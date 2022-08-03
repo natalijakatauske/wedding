@@ -1,0 +1,67 @@
+.orange > div {
+    background-color: orange;
+    height: 40px;
+    margin: 5px;
+}
+
+.yellow > div {
+    background-color: yellowgreen;
+    height: 50px;
+    margin: 5px;
+}
+
+.blue > div {
+    background-color: blue;
+    height: 120px;
+    margin: 5px;
+}
+
+.grey > div {
+    background-color: grey;
+    height: 50px;
+    margin: 5px;
+}
+
+@media screen and (min-width:768px) {
+    .yellow > div {
+        height: 160px;
+    }
+    .blue > div {
+        height: 60px;
+    }
+    .grey {
+        display: grid;
+        grid-template-columns: 50% 50%;
+         }
+    /* .grey > div {
+        width: 50%; */
+    /* } */
+}
+
+@media screen and (min-width:1024px) {
+    .orange > div {
+        height: 60px;
+    }
+    .orange {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3px;
+    }
+    .yellow > div {
+        height: 200px;
+    }
+    .blue {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .blue > div {
+        height: 150px;
+    }
+    .grey {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grey > div {
+        height: 100px;
+    }
+}
